@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokaverk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="header">
+            <span class="title">CSI Crime Lab</span>
+            <div>
+                <svg class="svg-icon" width="300" height="200">
+                    <polygon stroke="one" fill="green" points="250 150 , 50 50 , 250 50 , 50 150"></polygon>
+                </svg>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <ul>
+                    <li>Case Files</li>
+                    <li>Suspects</li>
+                    <li>Evidence</li>
+                    <li>Reports</li>
+                    <li>                <div>
+                        <button id='webcamButton'>ENABLE WEBCAM</button>
+                        <div style='position: relative;'>
+                            <video id='webcam' autoplay></video>
+                            <canvas id='output_canvas' width='360' height='240' style='position: absolute; left: 0px; top: 0px;'></canvas>
+                        </div></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div>
+                    <svg class="svg-object" width="100%" height="1000">
+                        <polygon stroke="one" fill="red" points="194 242 , 426 283 , 678 246 , 423 309"></polygon>
+                    </svg>
+                </div>
+                <!-- handlandmarks dót -->
+                </div>
+                    <div id="scene-container">
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <span>&copy; 2024 CSI Crime Lab</span>
+        </div>
+    </div>
+
+<!-- importa scriptunum -->
+    <script src="./lib/anime.min.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
